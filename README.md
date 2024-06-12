@@ -5,9 +5,9 @@
    vagrant ssh ipa
    sudo -i  
    kinit admin       пароль Qwerty78  
-      добавляем сервис  
+      добавляем сервис:  
    ipa service-add nfs/nfss.alex.lan  
-       создание пользователя и группы
+       создание пользователя и группы:  
    ipa user-add otus --first otis --last otus --password  
    ipa group-add nfs_users --desc="NFS users"  
    ipa group-add-member nfs_users --users=otus  
