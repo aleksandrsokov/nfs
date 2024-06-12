@@ -11,6 +11,7 @@
 
    создание пользователя и группы:  
    ipa user-add otus --first otis --last otus --password  
+   ipa user-mod otus --password-expiration 20301231000000Z
    ipa group-add nfs_users --desc="NFS users"  
    ipa group-add-member nfs_users --users=otus  
 4. запускам vagrant up nfss  
