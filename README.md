@@ -2,11 +2,13 @@
 1. при необходимости изменить ip в vagrant
 2. Запускаем vagrant up  ipa  
 3. далее:  
-   vagrant ssh ipa
+   vagrant ssh ipa  
    sudo -i  
-   kinit admin       пароль Qwerty78  
+   kinit admin  -  пароль Qwerty78
+
       добавляем сервис:  
-   ipa service-add nfs/nfss.alex.lan  
+   ipa service-add nfs/nfss.alex.lan
+     
        создание пользователя и группы:  
    ipa user-add otus --first otis --last otus --password  
    ipa group-add nfs_users --desc="NFS users"  
